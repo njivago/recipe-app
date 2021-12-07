@@ -15,11 +15,11 @@ const MealsList = ({ props, meals, isF }) => {
   if (isF === 'false') {
     func = props.obj.addFav;
     funcTitle = 'Add to your Recipe Book';
-    url = '/';
+    url = '/recipe-app/';
   } else {
     func = props.obj.removeFav;
     funcTitle = 'Remove from your Recipe Book';
-    url = '/recipeBook';
+    url = '/recipe-app/recipeBook';
   }
 
   return (
