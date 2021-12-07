@@ -1,15 +1,19 @@
 import './Navbar.css';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = ({ setSearchValue, searchValue }) => {
   return (
     <header>
-      <Link to="/" className="nav-link">
+      <NavLink to="/recipe-app/" className="nav-link" activeClassName="active">
         Meals
-      </Link>
-      <Link to="/recipeBook" className="nav-link">
+      </NavLink>
+      <NavLink
+        to="/recipe-app/recipeBook"
+        className="nav-link"
+        activeClassName="active"
+      >
         Your RecipeBook
-      </Link>
+      </NavLink>
       <input
         value={searchValue}
         className="header__search"

@@ -5,7 +5,7 @@ const Meal = ({ meal, setId, btnFunc, btnTitle, url, setUrl }) => {
   return (
     <div className="meal-block">
       <Link
-        to="/recipe/"
+        to="/recipe-app/recipe"
         onClick={(e) => {
           setId(e.target.dataset.id);
           setUrl(e.target.dataset.url);

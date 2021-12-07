@@ -20,3 +20,6 @@ header {
   font-family: 'Poppins', sans-serif;
   width: 9vw;
 }
+.active {
+  font-size: 30px;
+}
