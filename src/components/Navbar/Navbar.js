@@ -4,10 +4,14 @@ import { NavLink } from 'react-router-dom';
 const Navbar = ({ setSearchValue, searchValue }) => {
   return (
     <header>
-      <NavLink to="/" className="nav-link" activeClassName="active">
+      <NavLink to="/recipe-app/" className="nav-link" activeClassName="active">
         Meals
       </NavLink>
-      <NavLink to="/recipeBook" className="nav-link" activeClassName="active">
+      <NavLink
+        to="/recipe-app/recipeBook"
+        className="nav-link"
+        activeClassName="active"
+      >
         Your RecipeBook
       </NavLink>
       <input

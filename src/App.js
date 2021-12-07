@@ -74,16 +74,19 @@ function App() {
       <Navbar searchValue={searchValue} setSearchValue={setSearchValue} />
       <Routes>
         <Route
-          path="/"
+          path="/recipe-app/"
           element={
             <MealsList props={propertiesObj} isF="false" meals={meals} />
           }
         />
         <Route
-          path="/recipeBook"
+          path="/recipe-app/recipeBook"
           element={<MealsList props={propertiesObj} meals={favouriteMeals} />}
         />
-        <Route path="/recipe" element={<Recipe recipe={recipe} url={url} />} />
+        <Route
+          path="/recipe-app/recipe"
+          element={<Recipe recipe={recipe} url={url} />}
+        />
       </Routes>
     </div>
   );
