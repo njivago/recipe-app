@@ -1,0 +1,20 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: thistle;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-link {
+  text-decoration: none;
+  color: rgb(138, 64, 64);
+  font-size: 24px;
+  font-weight: bold;
+}
+.header__search {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  width: 9vw;
+}

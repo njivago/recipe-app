@@ -1,0 +1,13 @@
+.meal-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 30px;
+  gap: 30px;
+}
+.error {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}

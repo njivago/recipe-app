@@ -1,0 +1,52 @@
+.meal-block {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  box-shadow: 4px 4px 25px 16px rgba(34, 60, 80, 0.2);
+  padding: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS';
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.meal-preview {
+  width: 100%;
+  transition: opacity 0.3s ease;
+}
+.meal-preview:hover {
+  opacity: 0.8;
+}
+.meal-name {
+  margin: 0px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+.meal-description {
+  margin: 5px;
+  font-size: 18px;
+  text-align: center;
+}
+.add-to-fav-btn {
+  border: 0;
+  padding: 20px;
+  text-align: center;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(204, 193, 178);
+  transition: background 0.3s ease;
+}
+.hr {
+  width: 100%;
+}
+.add-to-fav-btn:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
