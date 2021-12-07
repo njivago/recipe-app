@@ -5,15 +5,15 @@ const Navbar = ({ setSearchValue, searchValue }) => {
   return (
     <header>
       <Link to="/" className="nav-link">
-        Recipes Book
+        Meals
       </Link>
       <Link to="/recipeBook" className="nav-link">
-        Favourites
+        Your RecipeBook
       </Link>
       <input
         value={searchValue}
         className="header__search"
-        placeholder="Search"
+        placeholder="Search meals"
         onChange={(e) => {
           setSearchValue(e.target.value);
         }}

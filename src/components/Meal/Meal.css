@@ -1,16 +1,13 @@
 .meal-block {
-  background: rgb(34, 193, 195);
-  background: linear-gradient(
-    0deg,
-    rgba(34, 193, 195, 1) 0%,
-    rgba(253, 187, 45, 1) 100%
-  );
-  box-shadow: 4px 4px 25px 16px rgba(34, 60, 80, 0.2);
+  box-shadow: 0 0 10px 2px #3333331a;
   padding: 30px;
-  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS';
-  border-radius: 30px;
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+  font-family: 'Poppins', sans-serif;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 .meal-preview {
@@ -34,19 +31,20 @@
 .add-to-fav-btn {
   border: 0;
   padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 0;
   text-align: center;
   border-radius: 25px;
   font-weight: bold;
   font-size: 15px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgb(204, 193, 178);
-  transition: background 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(243, 225, 255);
+  transition: box-shadow 0.3s ease;
 }
 .hr {
   width: 100%;
 }
 .add-to-fav-btn:hover {
-  background-color: black;
-  color: white;
+  box-shadow: 0 0 10px 5px #3333331a;
   cursor: pointer;
 }

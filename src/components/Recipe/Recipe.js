@@ -1,7 +1,7 @@
 import './Recipe.css';
 import { Link } from 'react-router-dom';
 
-const Recipe = ({ recipe }) => {
+const Recipe = ({ recipe, url }) => {
   let ingridients = [];
 
   for (let key in recipe) {
@@ -30,7 +30,7 @@ const Recipe = ({ recipe }) => {
           </div>
         </div>
       </div>
-      <Link to="/">
+      <Link to={url}>
         <button className="back-btn"> Back</button>
       </Link>
     </>

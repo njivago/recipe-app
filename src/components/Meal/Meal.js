@@ -1,13 +1,14 @@
 import './Meal.css';
 import { Link } from 'react-router-dom';
 
-const Meal = ({ meal, setId, btnFunc, btnTitle }) => {
+const Meal = ({ meal, setId, btnFunc, btnTitle, url, setUrl }) => {
   return (
     <div className="meal-block">
       <Link
         to="/recipe/"
         onClick={(e) => {
           setId(e.target.dataset.id);
+          setUrl(e.target.dataset.url);
         }}
       >
         <img
@@ -15,6 +16,7 @@ const Meal = ({ meal, setId, btnFunc, btnTitle }) => {
           alt=""
           className="meal-preview"
           data-id={meal.idMeal}
+          data-url={url}
         />
       </Link>
       <h4 className="meal-name">{meal.strMeal}</h4>
@@ -26,6 +28,7 @@ const Meal = ({ meal, setId, btnFunc, btnTitle }) => {
         className="add-to-fav-btn"
         onClick={() => {
           btnFunc(meal);
+          console.log(meal);
         }}
       >
         {btnTitle}

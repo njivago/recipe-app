@@ -1,7 +1,10 @@
 .wrapper {
   width: 80vw;
   margin: 0 auto;
-  background-color: teal;
+  background-color: whitesmoke;
   padding: 20px;
+  font-family: 'Poppins', sans-serif;
   min-height: 500px;
+  box-shadow: 0 0 10px 2px #3333331a;
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');

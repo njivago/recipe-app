@@ -5,9 +5,7 @@
   gap: 30px;
 }
 .error {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 30px;
 }

@@ -2,8 +2,7 @@ import Meal from '../Meal/Meal';
 import './MealsList.css';
 
 const MealsList = ({ props, meals, isF }) => {
-  let func;
-  let funcTitle;
+  let func, funcTitle, url;
 
   if (!meals) {
     return (
@@ -16,9 +15,11 @@ const MealsList = ({ props, meals, isF }) => {
   if (isF === 'false') {
     func = props.obj.addFav;
     funcTitle = 'Add to your Recipe Book';
+    url = '/';
   } else {
     func = props.obj.removeFav;
     funcTitle = 'Remove from your Recipe Book';
+    url = '/recipeBook';
   }
 
   return (
@@ -30,6 +31,8 @@ const MealsList = ({ props, meals, isF }) => {
             setId={props.setId}
             btnFunc={func}
             btnTitle={funcTitle}
+            url={url}
+            setUrl={props.setUrl}
           />
         );
       })}

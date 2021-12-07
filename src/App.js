@@ -10,6 +10,7 @@ function App() {
   const [id, setId] = useState('');
   const [recipe, setRecipe] = useState({});
   const [searchValue, setSearchValue] = useState('');
+  const [url, setUrl] = useState('');
   const [favouriteMeals, setFavouriteMeals] = useState([]);
 
   useEffect(() => {
@@ -32,12 +33,15 @@ function App() {
   };
 
   const addFavouritesMeal = (meal) => {
-    let newFavouriteList = [];
+    let newFavouriteMealsList = [];
     if (favouriteMeals) {
-      newFavouriteList = [...favouriteMeals, meal];
-    } else newFavouriteList.push(meal);
-    setFavouriteMeals(newFavouriteList);
-    saveToLocalStorage(newFavouriteList);
+      newFavouriteMealsList = [...favouriteMeals, meal];
+      favouriteMeals.forEach((favouriteMeal) => {
+        if (favouriteMeal.idMeal === meal.idMeal) newFavouriteMealsList.pop();
+      });
+    } else newFavouriteMealsList.push(meal);
+    setFavouriteMeals(newFavouriteMealsList);
+    saveToLocalStorage(newFavouriteMealsList);
   };
 
   const removeFavouriteMeal = (meal) => {
@@ -62,6 +66,7 @@ function App() {
       addFav: addFavouritesMeal,
       removeFav: removeFavouriteMeal,
     },
+    setUrl: setUrl,
   };
 
   return (
@@ -78,7 +83,7 @@ function App() {
           path="/recipeBook"
           element={<MealsList props={propertiesObj} meals={favouriteMeals} />}
         />
-        <Route path="/recipe" element={<Recipe recipe={recipe} />} />
+        <Route path="/recipe" element={<Recipe recipe={recipe} url={url} />} />
       </Routes>
     </div>
   );

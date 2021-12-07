@@ -3,18 +3,20 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 15px;
-  background-color: thistle;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(243, 225, 255);
+  font-family: 'Poppins', sans-serif;
 }
 .nav-link {
   text-decoration: none;
-  color: rgb(138, 64, 64);
-  font-size: 24px;
+  color: rgb(138, 35, 35);
+  font-size: 26px;
   font-weight: bold;
+  font-family: 'Poppins', sans-serif;
 }
 .header__search {
   padding: 5px;
   border-radius: 5px;
   border: none;
+  font-family: 'Poppins', sans-serif;
   width: 9vw;
 }
